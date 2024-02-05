@@ -5,6 +5,9 @@ const io = require('socket.io')(http);
 const { checkAllFiles } = require('./utils/logger'); // Import checkAllFiles from logger
 const PORT = process.env.PORT || 5000;
 
+// Add middleware to serve static files from the 'public' directory
+app.use(express.static('public'));
+
 // Other imports and middleware setup
 
 // Routes
