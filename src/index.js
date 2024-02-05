@@ -1,4 +1,5 @@
 const app = require('./App');
+const { checkAllFiles } = require('./utils/logger'); // Import checkAllFiles from logger
 
 const PORT = process.env.PORT || 5000;
 
